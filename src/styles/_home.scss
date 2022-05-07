@@ -3,23 +3,67 @@
 
 .home{
 	@include mixins.default-grid;
+    background-color: var(--teal);
+    padding: 0 2rem;
 
 	&__heading{
-		
+        text-align: center;
+        margin-top: 4rem;
+        font-weight: bold;
+        color: var(--gray);
+        font-size: 1.95rem;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 	}
 
-	&__card-display{
-		@include mixins.default-grid;
-		padding: 2rem 3%;
-		grid-column-gap: 3%;
-		grid-row-gap: 7rem;
-		justify-content: center;
-		grid-template-columns: repeat(auto-fit, 21.35rem);
-	}
-}
+    &__subheading{
+        color: var(--gray);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        font-size: 1.4rem;
+        margin: 2.25rem 0 2.25rem;
+    }
 
-.card{
-    @include mixins.default-grid;
-    position: relative;
-    background: #edf4f7;
+	// &__card-display{
+	// 	@include mixins.default-grid;
+	// 	padding: 2rem 3%;
+	// 	grid-column-gap: 3%;
+	// 	grid-row-gap: 7rem;
+	// 	justify-content: center;
+	// 	grid-template-columns: repeat(auto-fit, 19rem);
+    //     margin: 2rem 1.75rem 11rem;
+	// }
+
+    .row{
+        display: flex;
+        margin-bottom: 2.25rem;
+
+        &__rank{
+            color: var(--blue);
+            font-weight: bold;
+            margin: auto 0;
+            width: 4rem;
+            font-size: 2rem;
+        }
+
+        &__image-slot{
+            @include mixins.default-grid;
+            width: 5rem;
+            height: 5rem;
+            background-color: var(--gray);
+            padding: 0.25rem;
+            margin-right: 1rem;
+        }
+
+        &__image{
+            font-size: 3.75rem;
+            margin: auto;
+            color: var(--blue);
+        }
+
+        &__title{
+            color: black;
+            font-size: 1.1rem;
+            align-self: center;
+            font-weight: bold;
+        }
+    }
 }

@@ -42,12 +42,17 @@ body{
 
 #root{
 	@include mixins.default-grid;
+	font-family: var(--font);
 }
 
 main{
-	justify-self: center;
-	max-width: 412px;
+	place-self: center center;
+	width: 100%;
+	max-width: 360px;
+	min-height: 100vh;
+
 	@include mixins.default-grid;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* 4. Utility ================================ */
