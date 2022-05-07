@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom'
 
-import Title from './views/Title'
+import Home from './views/Home'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Title />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

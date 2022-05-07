@@ -1,0 +1,25 @@
+@use 'variables';
+@use 'mixins';
+
+.home{
+	@include mixins.default-grid;
+
+	&__heading{
+		
+	}
+
+	&__card-display{
+		@include mixins.default-grid;
+		padding: 2rem 3%;
+		grid-column-gap: 3%;
+		grid-row-gap: 7rem;
+		justify-content: center;
+		grid-template-columns: repeat(auto-fit, 21.35rem);
+	}
+}
+
+.card{
+    @include mixins.default-grid;
+    position: relative;
+    background: #edf4f7;
+}
