@@ -5,8 +5,8 @@
 	@include mixins.default-grid;
     background-color: var(--rose);
     position: relative;
+    max-width: 414px;
     
-
     &__container{
         @include mixins.default-grid;
         grid-auto-rows: max-content;
