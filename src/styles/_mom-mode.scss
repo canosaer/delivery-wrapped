@@ -6,6 +6,63 @@
     background: black;
     color: white;
 
+    .heading-row{
+        @include mixins.default-grid;
+        background-color: #191919;
+        padding: 0.25rem 2rem 0;
+        height: 2.25rem;
+
+        &__link{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            place-self: start start;
+        }
+
+        &__arrow{
+            font-size: 1.4rem;
+            color: white;
+        }
+
+        &__heading{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            place-self: start center;
+            font-weight: 600;
+        }
+    }
+
+    &__container{
+        padding: 2rem;
+    }
+
+    .data-row{
+        position: relative;
+        
+        &__heading{
+            font-weight: 600;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        &__text{
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 2rem;
+        }
+
+        &__button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            font-size: 0.95rem;
+            border: 1px solid gray;
+            padding: 0.35rem 1rem;
+            border-radius: 999rem;
+            cursor: pointer;
+        }
+    }
+
     &__switch{
         position: relative;
         display: inline-block;

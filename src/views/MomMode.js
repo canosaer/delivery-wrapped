@@ -11,9 +11,11 @@ export default function MomMode() {
     return(
         <main className="mom-mode">
             <TopRow mod="mom-mode" />
-            <div className="account-row">
-                <FontAwesomeIcon className="account-row__logo" icon={"chevron-left"} />
-                <h1 className="account-row__heading">Account</h1>
+            <div className="heading-row">
+                <Link to="/" className="heading-row__link">
+                    <FontAwesomeIcon className="heading-row__arrow" icon={"chevron-left"} />
+                </Link>
+                <h1 className="heading-row__heading">Account</h1>
             </div>
             <section className="mom-mode__container">
                 <div className="data-row">
