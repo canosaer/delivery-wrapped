@@ -1,0 +1,43 @@
+@use 'variables';
+@use 'mixins';
+
+.top-row{
+    @include mixins.default-grid;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0));
+    height: 3.5rem;
+    padding: 0 2rem;
+
+    &__link{
+        place-self: center start;
+        width: 2rem;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    &__logo{
+        color: white;
+        font-size: 1.4rem;
+    }
+}
+
+.close{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    @include mixins.default-grid;
+    place-self: center end;
+
+    &__line{
+        width: 1.4rem;
+        height: 1px;
+        background-color: white;
+
+        &_1{
+            transform: rotate(45deg);
+        }
+
+        &_2{
+            transform: rotate(-45deg);
+            margin: -1px 0 0;
+        }
+    }
+}

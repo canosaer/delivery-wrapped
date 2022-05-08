@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import {Context} from '../store/store'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import TopRow from '../components/TopRow'
 import accent from '../img/accent.png'
 import mom from '../img/mom.jpg'
 import baby from '../img/baby.jpg'
@@ -13,10 +14,8 @@ export default function Home() {
     return(
         <main className="home">
             <img className="home__accent" src={accent}></img>
+            <TopRow />
             <section className="home__container">
-                <a className="home__link" href="https://www.spotify.com/us/" target="_blank">
-                    <FontAwesomeIcon className="home__logo" icon={["fab", "spotify"]} />
-                </a>
                 <h1 className="home__heading">Delivery Wrapped</h1>
                 <div className="home__row-display">
                     <Link to="" className="row">

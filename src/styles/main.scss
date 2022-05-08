@@ -22,6 +22,7 @@ TABLE OF CONTENTS:
 
 /* 1. Partials =============================== */
 @use 'home';
+@use 'top-row';
 
 /* 2. Fonts ================================== */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
@@ -48,7 +49,6 @@ body{
 main{
 	place-self: center center;
 	width: 100%;
-	max-width: 414px;
 	min-height: 100vh;
 
 	@include mixins.default-grid;
