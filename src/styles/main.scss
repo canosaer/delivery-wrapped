@@ -48,7 +48,7 @@ body{
 main{
 	place-self: center center;
 	width: 100%;
-	max-width: 360px;
+	max-width: 414px;
 	min-height: 100vh;
 
 	@include mixins.default-grid;
