@@ -1,5 +1,7 @@
 import './styles/main.scss'
 
+import React, { useEffect } from 'react'
+
 import {
   BrowserRouter,
   Routes,
@@ -8,8 +10,15 @@ import {
 
 import Home from './views/Home'
 import MomMode from './views/MomMode'
+import { useWindowDimensions } from './utilities'
 
 function App() {
+  const cssRootVariables = document.documentElement.style
+  const height = useWindowDimensions().height
+
+  useEffect(() => {
+    cssRootVariables.setProperty('--height', height)
+  }, []);
 
   return (
     <>

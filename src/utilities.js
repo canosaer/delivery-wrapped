@@ -24,9 +24,9 @@ const useDebounce = function(value, delay) {
 };
 
 function getWindowDimensions() {
-  const { innerWidth: width } = window;
+  const { innerWidth: width, innerHeight: height } = window;
   return {
-    width
+    width, height
   };
 }
 
