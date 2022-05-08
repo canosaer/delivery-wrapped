@@ -21,8 +21,8 @@ export default function MomMode() {
                     <p className="data-row__text">angluetto</p>
                 </div>
                 <div className="data-row">
-                    <h2 className="data-row__heading">Username</h2>
-                    <p className="data-row__text">angluetto</p>
+                    <h2 className="data-row__heading">Email</h2>
+                    <p className="data-row__text">angluetto@gmail.com</p>
                     <div className="data-row__button">Edit</div>
                 </div>
                 <div className="account-row">
