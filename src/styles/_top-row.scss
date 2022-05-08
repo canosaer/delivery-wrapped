@@ -25,6 +25,8 @@
     grid-column: 1/2;
     @include mixins.default-grid;
     place-self: center end;
+    height: 1.4rem;
+    width: 1.4rem;
 
     &__line{
         width: 1.4rem;
@@ -33,11 +35,12 @@
 
         &_1{
             transform: rotate(45deg);
+            margin: 9px auto 0;
         }
 
         &_2{
             transform: rotate(-45deg);
-            margin: -1px 0 0;
+            margin: -7px 0 0;
         }
     }
 }

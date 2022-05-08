@@ -26,15 +26,8 @@
         width: 85%;
 	}
 
-    &__accent{
-        position: absolute;
-        width: 100%;
-        z-index: 0;
-        bottom: 0;
-    }
-
     &__row-display{
-        margin: 2rem 0 11.5rem;
+        margin-top: 2rem;
         justify-self: center;
     }
 

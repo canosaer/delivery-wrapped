@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import Home from './views/Home'
+import MomMode from './views/MomMode'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/mom-mode" element={<MomMode />} />
         </Routes>
       </BrowserRouter>
     </>

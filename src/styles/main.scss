@@ -1,6 +1,6 @@
 /* 
 ==============================================
-CONTENT:	
+CONTENT:	Delivery Wrapped
 AUTHOR:		Eric Canosa
 ==============================================
 
@@ -23,6 +23,8 @@ TABLE OF CONTENTS:
 /* 1. Partials =============================== */
 @use 'home';
 @use 'top-row';
+@use 'bottom-row';
+
 
 /* 2. Fonts ================================== */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
