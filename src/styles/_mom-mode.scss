@@ -33,12 +33,12 @@
 
     &__container{
         @include mixins.default-grid;
-        padding: 2rem;
+        padding: 1.75rem 2rem;
     }
 
     .data-row{
         position: relative;
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
         
         &__heading{
             font-weight: 600;
@@ -66,7 +66,7 @@
 
     .account-row{
         @include mixins.default-grid;
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
 
         &__image-slot{
             @include mixins.default-grid;
@@ -179,7 +179,7 @@
     }
 
     .date-row{
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
 
         &__heading{
             margin-bottom: 0.5rem;
@@ -196,7 +196,7 @@
         font-size: 0.9rem;
         opacity: 0.7;
         line-height: 1.35;
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
     }
 
     .nav-row{
