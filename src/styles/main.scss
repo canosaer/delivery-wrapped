@@ -51,7 +51,7 @@ body{
 main{
 	place-self: center center;
 	width: 100%;
-	min-height: 100vh;
+	min-height: var(--height);
 
 	@include mixins.default-grid;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
