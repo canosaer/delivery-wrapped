@@ -24,6 +24,7 @@ TABLE OF CONTENTS:
 @use 'home';
 @use 'top-row';
 @use 'bottom-row';
+@use 'mom-mode';
 
 
 /* 2. Fonts ================================== */
@@ -52,9 +53,10 @@ main{
 	place-self: center center;
 	width: 100%;
 	min-height: var(--height);
-
+	position: relative;
 	@include mixins.default-grid;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+	grid-auto-rows: max-content;
 }
 
 /* 4. Utility ================================ */

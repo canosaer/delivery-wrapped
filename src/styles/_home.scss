@@ -2,11 +2,8 @@
 @use 'mixins';
 
 .home{
-	@include mixins.default-grid;
     background-color: var(--rose);
-    position: relative;
     max-width: 414px;
-    grid-auto-rows: max-content;
     
     &__container{
         @include mixins.default-grid;
