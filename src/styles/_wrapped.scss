@@ -1,0 +1,77 @@
+@use 'variables';
+@use 'mixins';
+
+.wrapped{
+    max-width: 414px;
+}
+
+.swiper {
+    width: 100%;
+    height: var(--height);
+}
+
+.swiper-slide {
+    background: linear-gradient(var(--rose), var(--gray));
+    @include mixins.default-grid;
+    grid-template-columns: 2rem 1fr 2rem;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    display: none !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: var(--blue) !important;
+}
+
+.content{
+    @include mixins.default-grid;
+    position: relative;
+    grid-column: 2/3;
+    height: var(--content-height);
+    width: 100%;
+    margin: 4rem 0;
+    background: var(--rose);
+    padding: 0 2.5rem;
+    line-height: 1.15;
+
+    &_slide2{
+        background: var(--blue);
+    }
+
+    &_slide3{
+        background: var(--pink);
+    }
+
+    &_slide4{
+        background: var(--teal);
+    }
+
+    &_slide5{
+        background: var(--gray);
+    }
+
+    &_slide6{
+        background: var(--rose);
+    }
+
+    &_slide7{
+        background: var(--blue);
+    }
+
+    &_slide8{
+        background: var(--pink);
+    }
+}
+
+.slide-1{
+    &__heading{
+        text-align: center;
+        place-self: center center;
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        color: var(--blue);
+        font-weight: 800;
+    }
+}
+

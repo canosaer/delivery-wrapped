@@ -11,6 +11,14 @@
         background: #191919;
     }
 
+    &_swiper{
+        position: absolute;
+        top:0;
+        width: 100%;
+        z-index: 2;
+        padding: 0 1rem;
+    }
+
     &__link{
         place-self: center start;
         width: 2rem;

@@ -21,7 +21,7 @@ export default function Home() {
                             </div>
                         <p className="row__title">Mom Mode</p>
                     </Link>
-                    <Link to="" className="row">
+                    <Link to="/wrapped" className="row">
                         <p className="row__rank">#2</p>
                         <div className="row__image-slot">
                             <img className="row__image" src={baby} alt="baby" />

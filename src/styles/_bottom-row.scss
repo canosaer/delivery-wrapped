@@ -6,15 +6,54 @@
     bottom: 0;
     position: absolute;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-weight: bold;
     background-color: var(--teal);
+    color: var(--rose);
+    font-size: 0.9rem;
+
+    &_slide2{
+        background-color: var(--pink);
+        color: var(--blue);
+    }
+
+    &_slide3{
+        background-color: var(--teal);
+        color: var(--rose);
+    }
+
+    &_slide4{
+        background-color: var(--pink);
+        color: var(--blue);
+    }
+
+    &_slide5{
+        background-color: var(--teal);
+        color: var(--rose);
+    }
+
+    &_slide6{
+        background-color: var(--pink);
+        color: var(--blue);
+    }
+
+    &_slide7{
+        background-color: var(--teal);
+        color: var(--rose);
+    }
+
+    &_slide8{
+        background-color: var(--teal);
+        color: var(--rose);
+    }
+
 
     &__link{
         display: flex;
         grid-column: 1/2;
         grid-row: 1/2;
-        color: var(--rose);
+        color: unset;
+        width: 5.5rem;
     }
 
     &__logo{
@@ -31,6 +70,5 @@
         grid-row: 1/2;
         place-self: center end;
         text-transform: uppercase;
-        color: var(--rose);
     }
 }
