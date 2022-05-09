@@ -29,36 +29,22 @@
     }
 
     .row{
-        display: flex;
-        margin-bottom: 2.25rem;
+        @include mixins.artist-row;
 
         &__rank{
-            color: var(--blue);
-            font-weight: 800;
-            margin: auto 0;
             width: 4rem;
+            color: var(--blue);
             font-size: 2rem;
         }
 
         &__image-slot{
             padding: 0.25rem;
-            margin-right: 1rem;
+            width: 5rem;
         }
 
         &__image{
             @include mixins.default-img;
-            height: 5rem;
-            width: 5rem;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            background: rgba(255,255,255, 0.85);
-        }
-
-        &__title{
-            color: black;
-            font-size: 1.1rem;
-            align-self: center;
-            font-weight: 800;
-            line-height: 1.5rem;
+            @include mixins.artist-img;
         }
     }
 }

@@ -42,10 +42,6 @@ a{
 	text-decoration: none;
 }
 
-body{
-	background: whitesmoke;
-}
-
 #root{
 	@include mixins.default-grid;
 	font-family: var(--font);
