@@ -8,44 +8,47 @@
     width: 100%;
     padding: 1rem;
     font-weight: bold;
-    background-color: var(--teal);
-    color: var(--rose);
     font-size: 0.9rem;
 
-    // &_slide2{
-    //     background-color: var(--pink);
-    //     color: var(--blue);
-    // }
+    &_slide1{
+        background-color: var(--teal);
+        color: var(--pink);
+    }
 
-    // &_slide3{
-    //     background-color: var(--teal);
-    //     color: var(--rose);
-    // }
+    &_slide2{
+        background-color: var(--pink);
+        color: var(--blue);
+    }
 
-    // &_slide4{
-    //     background-color: var(--pink);
-    //     color: var(--blue);
-    // }
+    &_slide3{
+        background-color: var(--blue);
+        color: var(--pink);
+    }
 
-    // &_slide5{
-    //     background-color: var(--teal);
-    //     color: var(--rose);
-    // }
+    &_slide4{
+        background-color: var(--rose);
+        color: var(--blue);
+    }
 
-    // &_slide6{
-    //     background-color: var(--pink);
-    //     color: var(--blue);
-    // }
+    &_slide5{
+        background-color: var(--blue);
+        color: var(--pink);
+    }
 
-    // &_slide7{
-    //     background-color: var(--teal);
-    //     color: var(--rose);
-    // }
+    &_slide6{
+        background-color: var(--pink);
+        color: var(--blue);
+    }
 
-    // &_slide8{
-    //     background-color: var(--teal);
-    //     color: var(--rose);
-    // }
+    &_slide7{
+        background-color: var(--rose);
+        color: var(--blue);
+    }
+
+    &_slide8{
+        background-color: var(--rose);
+        color: var(--blue);
+    }
 
 
     &__link{
