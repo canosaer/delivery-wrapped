@@ -68,9 +68,9 @@ export default function Wrapped() {
             case 4:
                 return(
                     <div className="slide-4__content-box">
-                        <p className="slide-4__heading">These were the artists you l
+                        <p className="slide-4__heading">These were the artists you <span className="nowrap">l
                         <FontAwesomeIcon icon="fa-solid fa-heart" className="slide-4__heart" />
-                        ved</p>
+                        ved</span></p>
                         <FontAwesomeIcon className="slide-4__ellipsis" icon={"ellipsis"} />
                     </div>
 

@@ -76,6 +76,7 @@
     background: linear-gradient(var(--rose), var(--gray));
 
     &__heading{
+        margin-top: -2rem;
         @include mixins.slide-heading;
         text-transform: uppercase;
         place-self: center center;
@@ -88,11 +89,13 @@
     &__content-box{
         place-self: center center;
         @include mixins.default-grid;
+        margin-top: -2rem;
     }
 
     &__heading{
         @include mixins.slide-heading;
         margin-bottom: 0.5rem;
+        margin-top: -2rem;
     }
 
     &__ellipsis{

@@ -6,9 +6,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        height: var(--notification-height);
-        width:  100%;
-        margin-top: 4rem;
+        width: 100%;
+        height: var(--height);
         background-color: rgba(0,0,0,0.5);
         @include mixins.default-grid;
     }
@@ -36,7 +35,7 @@
 
     .address-form{
         @include mixins.default-grid;
-        grid-template-columns: 1fr 4rem 4rem;
+        grid-template-columns: 1fr 3.4rem 3.4rem;
 
         &__label{
             grid-column: 1/2;
@@ -54,6 +53,10 @@
             }
         }
 
+        [contenteditable="true"]:focus {
+            outline: none;
+        }
+
         &__input{
             grid-column: 1/-1;
             background: none;
@@ -62,6 +65,7 @@
             border: none;
             border-bottom: 1px solid var(--gray);
             padding: 0.4rem 0 0 0.1rem;
+            border-radius: 0;
 
             &_city{
                 grid-column: 1/2;
@@ -108,6 +112,7 @@
             text-transform: uppercase;
             font-weight: 600;
             cursor: pointer;
+            color: black;
         }
     }
 }
