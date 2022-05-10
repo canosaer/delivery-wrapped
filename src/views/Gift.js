@@ -2,6 +2,7 @@ import React from 'react'
 import AccountScreen from '../components/AccountScreen'
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
 export default function Gift() {
 
@@ -37,10 +38,7 @@ export default function Gift() {
                             zip: '',
                         }}
                         validationSchema={SignupSchema}
-                        // onSubmit={values => {
-                        //     // same shape as initial values
-                        //     console.log(values);
-                        // }}
+                        // onSubmit={}}
                         >
                         {({ errors, touched }) => (
                             <Form className="address-form">
@@ -59,7 +57,7 @@ export default function Gift() {
                                 <label className="address-form__label address-form__label_zip" htmlFor="zip">Zip</label>
                                 <Field className="address-form__input address-form__input_zip" name="zip" />
                                 <div className={errors.zip && touched.zip ? "address-form__error address-form__error_zip" : "address-form__error address-form__error_zip transparent"}>{errors.zip}</div>
-                                <button className="address-form__button" type="submit">Submit</button>
+                                <Link to="/" className="address-form__button">Submit</Link>
                             </Form>
                         )}
                     </Formik>
