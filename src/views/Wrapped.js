@@ -147,9 +147,9 @@ export default function Wrapped() {
                 modules={[Pagination, Navigation, Autoplay]}
                 className="wrapped__swiper"
                 loop={true}
-                // autoplay={{
-                //     delay: 3000,
-                // }}
+                autoplay={{
+                    delay: 3000,
+                }}
             >
                 {slides.map((slide, i) => {
                     const key = `slide--${i}`
