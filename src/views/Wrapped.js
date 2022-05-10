@@ -106,6 +106,32 @@ export default function Wrapped() {
                     </>
 
                 );
+            case 6:
+                return(
+                    <div className="slide-6__content-box">
+                        <h1 className="slide-6__heading">You were in very different moods each trimester</h1>
+                        <ul className="slide-6__list">
+                            <li className="slide-6__list-item">1) Indie</li>
+                            <li className="slide-6__list-item">2) R&B</li>
+                            <li className="slide-6__list-item">3) Pop</li>
+                        </ul>
+                    </div>
+
+                );
+            case 7:
+                return(
+                    <div className="slide-7__content-box">
+                        <h1 className="slide-7__heading">The baby kept you up a lot...</h1>
+                        <p className="slide-7__text">You listened to 3,000 minutes of music between midnight - 4am</p>
+                    </div>
+
+                );
+            case 8:
+                return(
+                    <div className="slide-8__content-box">
+                        <h1 className="slide-8__heading">With taste like this, you're going to be an amazing mom!</h1>
+                    </div>
+                );
         }
     }
 

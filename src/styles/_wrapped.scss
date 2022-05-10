@@ -78,7 +78,7 @@
     }
 }
 
-.slide-2, .slide-4{
+.slide-2, .slide-4, .slide-6, .slide-7, .slide-8{
 
     &__content-box{
         place-self: center center;
@@ -117,11 +117,15 @@
             margin-right: 1rem;
         }
 
+        &__image{
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+        }
+
         &__title{
             grid-column: 2/3;
             grid-row: 1/2;
             place-self: end start;
-            font-weight: 600;
+            font-weight: 800;
             margin-bottom: 0.1rem;
         }
 
@@ -131,6 +135,7 @@
             place-self: start start;
             opacity: 0.95;
             margin-top: 0.1rem;
+            font-weight: 600;
         }
     }
 }
@@ -170,7 +175,7 @@
             @include mixins.default-img;
             height: 5rem;
             width: 5rem;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
             background: rgba(255,255,255, 0.85);
         }
 
@@ -182,5 +187,36 @@
             font-weight: 800;
             line-height: 1.5rem;
           }
+    }
+}
+
+.slide-6{
+    &__list{
+        @include mixins.slide-heading;
+        text-align:unset;
+        margin: 0.5rem auto 0;
+    }
+
+    &__list-item{
+        color: var(--blue);
+        margin-bottom: 0.5rem;
+    }
+}
+
+.slide-7{
+    &__text{
+        color: var(--blue);
+        margin-top: 0.5rem;
+        @include mixins.slide-heading;
+    }
+
+}
+
+.slide-8{
+    &__text{
+        color: var(--blue);
+        margin-top: 0.75rem;
+        @include mixins.slide-heading;
+        text-transform: uppercase;
     }
 }
