@@ -84,7 +84,7 @@
     }
 }
 
-.slide-1, .slide-4, .slide-6, .slide-7, .slide-8{
+.slide-2, .slide-4, .slide-6, .slide-7, .slide-8{
 
     &__content-box{
         place-self: center center;
@@ -104,7 +104,7 @@
     }
 }
 
-.slide-1{
+.slide-2{
     background: linear-gradient(var(--gray), var(--blue));
 
     &__heading{
