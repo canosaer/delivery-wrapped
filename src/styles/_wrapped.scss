@@ -76,7 +76,7 @@
     background: linear-gradient(var(--rose), var(--gray));
 
     &__heading{
-        margin-top: -2rem;
+        margin-top: -1rem;
         @include mixins.slide-heading;
         text-transform: uppercase;
         place-self: center center;
@@ -84,18 +84,18 @@
     }
 }
 
-.slide-2, .slide-4, .slide-6, .slide-7, .slide-8{
+.slide-1, .slide-4, .slide-6, .slide-7, .slide-8{
 
     &__content-box{
         place-self: center center;
         @include mixins.default-grid;
-        margin-top: -2rem;
+        margin-top: -1rem;
     }
 
     &__heading{
         @include mixins.slide-heading;
         margin-bottom: 0.5rem;
-        margin-top: -2rem;
+        margin-top: -1rem;
     }
 
     &__ellipsis{
@@ -104,7 +104,7 @@
     }
 }
 
-.slide-2{
+.slide-1{
     background: linear-gradient(var(--gray), var(--blue));
 
     &__heading{
