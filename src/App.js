@@ -21,8 +21,10 @@ function App() {
   useEffect(() => {
     const effectiveHeight = height < 710 ? 710 : height
     const contentHeight = effectiveHeight - (7*16)
+    const notificationHeight = effectiveHeight - (9*16)
     cssRootVariables.setProperty('--height', `${effectiveHeight}px`)
     cssRootVariables.setProperty('--content-height', `${contentHeight}px`)
+    cssRootVariables.setProperty('--notification-height', `${notificationHeight}px`)
   }, []);
 
   return (
