@@ -9,11 +9,8 @@
     padding: 1rem;
     font-weight: bold;
     font-size: 0.9rem;
-
-    &_slide1{
-        background-color: var(--teal);
-        color: var(--pink);
-    }
+    background-color: var(--teal);
+    color: var(--pink);
 
     &_slide2{
         background-color: var(--pink);
