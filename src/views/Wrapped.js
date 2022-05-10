@@ -19,6 +19,7 @@ import "swiper/css/autoplay";
 export default function Wrapped() {
     const [state, dispatch] = useContext(Context)
     const [songMax, setSongMax] = useState(0)
+    const [artistClip, setArtistClip] = useState(false)
 
     let slides = ['','','','','','','','']
     slides.fill('swiper-slide slide-')
@@ -28,6 +29,7 @@ export default function Wrapped() {
     useEffect(() => {
         const height = ref.current.clientHeight
         setSongMax(Math.floor((height-76)/90))
+        // if(height < 800)
       }, []);
 
 
@@ -86,9 +88,9 @@ export default function Wrapped() {
                         <div className="slide-5__row-display">
                             {musicData.artists.map((artist, i) => {
                                 const key = `artist--${i}`
-                                
-                                return(
-                                    <div key={key} className="slide-5__row-display">
+
+                                if(i<songMax-1){
+                                    return(
                                         <div className="row">
                                             <p className="row__rank">#{i+1}</p>
                                             <div className="row__image-slot">
@@ -96,8 +98,9 @@ export default function Wrapped() {
                                             </div>
                                             <p className="row__title">{artist.name}</p>
                                         </div>
-                                    </div>
-                                )
+                                    )
+                                }
+                            
                             })}
                         </div>
                     </>

@@ -2,7 +2,7 @@
 @use 'mixins';
 
 .wrapped{
-    max-width: 360px;
+    max-width: 414px;
 }
 
 .swiper {
@@ -50,9 +50,9 @@
     //     background: var(--teal);
     // }
 
-    // &_slide5{
-    //     background: var(--gray);
-    // }
+    &_slide5{
+        grid-template-rows: 5.25rem;
+    }
 
     // &_slide6{
     //     background: var(--rose);
@@ -148,23 +148,39 @@
     }
 
     .row{
-        @include mixins.artist-row;
+        @include mixins.default-grid;
+        margin-bottom: 1.25rem;
+        grid-template-columns: 2rem 6.5rem 1fr;
 
         &__rank{
-            width: 3rem;
+            grid-column: 1/2;
+            font-weight: 800;
             color: var(--blue);
             font-size: 1.5rem;
+            place-self: center center;
         }
 
         &__image-slot{
+            grid-column: 2/3;
             padding: 0.25rem;
-            margin-right: 0rem;
-            width: 5rem;
+            place-self: center center;
         }
 
         &__image{
             @include mixins.default-img;
-            @include mixins.artist-img;
+            height: 5rem;
+            width: 5rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255,255,255, 0.85);
         }
+
+        &__title{
+            grid-column: 3/4;
+            color: black;
+            font-size: 1.1rem;
+            place-self: center start;
+            font-weight: 800;
+            line-height: 1.5rem;
+          }
     }
 }
