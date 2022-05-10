@@ -11,6 +11,7 @@ import {
 import Home from './views/Home'
 import MomMode from './views/MomMode'
 import Wrapped from './views/Wrapped'
+import Gift from './views/Gift'
 import { useWindowDimensions } from './utilities'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/mom-mode" element={<MomMode />} />
           <Route path="/wrapped" element={<Wrapped />} />
+          <Route path="/gift" element={<Gift />} />
         </Routes>
       </BrowserRouter>
     </>

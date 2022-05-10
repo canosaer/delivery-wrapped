@@ -28,7 +28,7 @@ export default function Home() {
                         </div>
                         <p className="row__title">Wrapped Playlist</p>
                     </Link>
-                    <Link to=""  className="row">
+                    <Link to="/gift"  className="row">
                         <p className="row__rank">#3</p>
                         <div className="row__image-slot">
                             <img className="row__image" src={celebration} alt="celebration" />

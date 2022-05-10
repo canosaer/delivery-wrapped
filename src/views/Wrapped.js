@@ -1,10 +1,8 @@
-import React, { useRef, useEffect, useState, useContext } from 'react'
-import { Context } from '../store/store'
+import React, { useRef, useEffect, useState } from 'react'
 import TopRow from '../components/TopRow'
 import BottomRow from '../components/BottomRow'
 import ShareRow from '../components/ShareRow'
 import { Swiper, SwiperSlide } from "swiper/react";
-import rainbow from '../img/rainbow.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import musicData from '../store/musicData'
 
@@ -17,19 +15,15 @@ import "swiper/css/autoplay";
 
 
 export default function Wrapped() {
-    const [state, dispatch] = useContext(Context)
     const [songMax, setSongMax] = useState(0)
-    const [artistClip, setArtistClip] = useState(false)
 
     let slides = ['','','','','','','','']
     slides.fill('swiper-slide slide-')
     const ref = useRef()
-    // const cssRootVariables = document.documentElement.style
 
     useEffect(() => {
         const height = ref.current.clientHeight
         setSongMax(Math.floor((height-76)/90))
-        // if(height < 800)
       }, []);
 
 

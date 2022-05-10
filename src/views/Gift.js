@@ -1,10 +1,10 @@
 import React from 'react'
 import AccountScreen from '../components/AccountScreen'
 
-export default function MomMode() {
+export default function Gift() {
 
     return(
-        <main className="mom-mode">
+        <main className="gift mom-mode">
             <AccountScreen />
         </main>
     )
