@@ -35,7 +35,7 @@ export default function AccountScreen() {
                 </div>
                 <p className="cancel">To close (delete) your account permanently, contact customer support.</p>
                 <h3 className="mom-mode__heading">Mom Mode</h3>
-                <p className="mom-mode__text">Enable Mom Mode to keep track of your favorite songs while you're expecting and we'll present you with a "Delivery Wrapped" playlist after the big day.</p>
+                <p className="mom-mode__text">Switch this on to track the songs and artists you listen to throughout your pregnancy. After your big day, we’ll share a special Delivery Wrapped to help you celebrate.</p>
                 <label className="mom-mode__switch">
                     <input className="mom-mode__checkbox" type="checkbox" onClick={() => {setMomMode(!momMode)}}/>
                     <span className="mom-mode__slider"></span>

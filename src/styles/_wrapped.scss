@@ -44,21 +44,20 @@
 
     &_slide3{
         background: var(--rose);
-        grid-template-rows: 5.25rem;
-
     }
 
     &_slide4{
         background: var(--teal);
+        grid-template-rows: 5.25rem;
     }
 
     &_slide5{
         background: var(--rose);
-        grid-template-rows: 5.25rem;
     }
 
     &_slide6{
         background: var(--blue);
+        grid-template-rows: 5.25rem;
     }
 
     &_slide7{
@@ -66,6 +65,22 @@
     }
 
     &_slide8{
+        background: var(--teal);
+    }
+
+    &_slide9{
+        background: var(--pink);
+    }
+
+    &_slide10{
+        background: var(--blue);
+    }
+
+    &_slide11{
+        background: var(--pink);
+    }
+
+    &_slide12{
         background: var(--teal);
     }
 }
@@ -76,40 +91,43 @@
     background: linear-gradient(var(--rose), var(--gray));
 
     &__heading{
-        margin-top: -1rem;
-        @include mixins.slide-heading;
-        text-transform: uppercase;
-        place-self: center center;
         color: var(--blue);
     }
 }
 
-.slide-2, .slide-4, .slide-6, .slide-7, .slide-8{
-
-    &__content-box{
-        place-self: center center;
-        @include mixins.default-grid;
-        margin-top: -1rem;
-    }
+.slide-1, .slide-2, .slide-3, .slide-5, .slide-7, .slide-9, .slide-10, .slide-11, .slide-12{
 
     &__heading{
+        margin-top: -4rem;
         @include mixins.slide-heading;
-        margin-bottom: 0.5rem;
-        margin-top: -1rem;
+        // text-transform: uppercase;
+        place-self: center center;
     }
 
-    &__ellipsis{
-        justify-self: center;
-        font-size: 1.9rem;
-    }
+    // &__content-box{
+    //     place-self: center center;
+    //     @include mixins.default-grid;
+    //     margin-top: -1rem;
+    // }
+
+    // &__heading{
+    //     @include mixins.slide-heading;
+    //     margin-bottom: 0.5rem;
+    //     margin-top: -1rem;
+    // }
+
+    // &__ellipsis{
+    //     justify-self: center;
+    //     font-size: 1.9rem;
+    // }
 }
 
 .slide-2{
     background: linear-gradient(var(--gray), var(--blue));
 
     &__heading{
-        @include mixins.slide-heading;
-        margin-bottom: 0.5rem;
+        // @include mixins.slide-heading;
+        // margin-bottom: 0.5rem;
         color: var(--gray);
     }
 
@@ -120,6 +138,17 @@
 }
 
 .slide-3{
+    background: linear-gradient(var(--pink), var(--teal));
+
+    &__heading{
+        // @include mixins.slide-heading;
+        // margin-bottom: 0.5rem;
+        color: var(--gray);
+    }
+
+}
+
+.slide-4{
     background: linear-gradient(var(--rose), var(--teal));
 
     &__heading{
@@ -162,28 +191,29 @@
     }
 }
 
-.slide-4{
+.slide-5{
     background: linear-gradient(var(--gray), var(--rose));
 
     &__heading{
         color: var(--pink);
     }
 
-    &__heart{
-        font-size: 1.25rem;
-    }
+    // &__heart{
+    //     font-size: 1.25rem;
+    // }
 
-    &__ellipsis{
-        color: var(--pink);
-    }
+    // &__ellipsis{
+    //     color: var(--pink);
+    // }
 }
 
-.slide-5{
+.slide-6{
     background: linear-gradient(var(--pink), var(--teal));
 
     &__heading{
         @include mixins.slide-heading;
         @include mixins.list-slide-heading;
+        color: var(--pink);
     }
 
     .row{
@@ -224,17 +254,27 @@
     }
 }
 
-.slide-6{
-    background: linear-gradient(var(--teal), var(--rose));
+.slide-7{
+    background: linear-gradient(var(--gray), var(--rose));
 
     &__heading{
-        color: var(--gray);
+        color: var(--blue);
     }
+}
+
+.slide-8{
+    background: linear-gradient(var(--teal), var(--rose));
+
+    // &__heading{
+    //     color: var(--gray);
+    // }
 
     &__list{
         @include mixins.slide-heading;
         text-align:unset;
         margin: 0.5rem auto 0;
+        place-self: center center;
+        margin-top: -1rem;
     }
 
     &__list-item{
@@ -243,26 +283,42 @@
     }
 }
 
-.slide-7{
+.slide-9{
     background: linear-gradient(var(--gray), var(--teal));
 
     &__heading{
         color: var(--blue);
     }
 
-    &__text{
-        color: var(--blue);
-        margin-top: 0.5rem;
-        @include mixins.slide-heading;
-    }
+    // &__text{
+    //     color: var(--blue);
+    //     margin-top: 0.5rem;
+    //     @include mixins.slide-heading;
+    // }
 
 }
 
-.slide-8{
-    background: linear-gradient(var(--gray), var(--rose));
+.slide-10{
+    background: linear-gradient(var(--pink), var(--teal));
 
     &__heading{
         color: var(--pink);
-        @include mixins.slide-heading;
+        // @include mixins.slide-heading;
+    }
+}
+
+.slide-11{
+    background: linear-gradient(var(--gray), var(--rose));
+
+    &__heading{
+        color: var(--blue);
+    }
+}
+
+.slide-12{
+    background: linear-gradient(var(--teal), var(--rose));
+
+    &__heading{
+        color: var(--pink);
     }
 }

@@ -17,7 +17,7 @@ import "swiper/css/autoplay";
 export default function Wrapped() {
     const [songMax, setSongMax] = useState(0)
 
-    let slides = ['','','','','','','','']
+    let slides = ['','','','','','','','','','','','']
     slides.fill('swiper-slide slide-')
     const ref = useRef()
 
@@ -31,21 +31,21 @@ export default function Wrapped() {
         switch(slide) {
             case 1:
                 return (
-                    <p className="slide-1__heading">Congrats on becoming a new mom!</p>
+                    <p className="slide-1__heading">We know you’ve already had a special delivery (shout out baby), but we wanted to give you another one.</p>
                 );
-
             case 2:
                 return (
-                    <div className="slide-2__content-box">
-                        <p className="slide-2__heading">While you were pregnant, your top songs were</p>
-                        <FontAwesomeIcon className="slide-2__ellipsis" icon={"ellipsis"} />
-                    </div>
+                    <p className="slide-2__heading">Here's your Delivery Wrapped.</p>
                 );
             case 3:
+                return (
+                    <p className="slide-3__heading">While the baby was growing, your love for these songs was, too.</p>
+                );
+            case 4:
                 return(
                     <>   
-                        <h1 className="slide-3__heading">Top Songs</h1>
-                        <div className="slide-3__row-display">
+                        <h1 className="slide-4__heading">Top Songs</h1>
+                        <div className="slide-4__row-display">
                             {musicData.songs.map((song, i) => {
                                 const key = `song--${i}`
 
@@ -65,21 +65,15 @@ export default function Wrapped() {
                     </>
 
                 );
-            case 4:
-                return(
-                    <div className="slide-4__content-box">
-                        <p className="slide-4__heading">These were the artists you <span className="nowrap">l
-                        <FontAwesomeIcon icon="fa-solid fa-heart" className="slide-4__heart" />
-                        ved</span></p>
-                        <FontAwesomeIcon className="slide-4__ellipsis" icon={"ellipsis"} />
-                    </div>
-
-                );
             case 5:
                 return(
+                    <p className="slide-5__heading">The two of you enjoyed many artists, but there were a few that stuck out.</p>
+                );
+            case 6:
+                return(
                     <>   
-                        <h1 className="slide-5__heading">Top Artists</h1>
-                        <div className="slide-5__row-display">
+                        <h1 className="slide-6__heading">Top Artists</h1>
+                        <div className="slide-6__row-display">
                             {musicData.artists.map((artist, i) => {
                                 const key = `artist--${i}`
 
@@ -100,31 +94,33 @@ export default function Wrapped() {
                     </>
 
                 );
-            case 6:
-                return(
-                    <div className="slide-6__content-box">
-                        <h1 className="slide-6__heading">You were in very different moods each trimester</h1>
-                        <ul className="slide-6__list">
-                            <li className="slide-6__list-item">1) Indie</li>
-                            <li className="slide-6__list-item">2) R&B</li>
-                            <li className="slide-6__list-item">3) Pop</li>
-                        </ul>
-                    </div>
-
-                );
             case 7:
                 return(
-                    <div className="slide-7__content-box">
-                        <h1 className="slide-7__heading">The baby kept you up a lot...</h1>
-                        <p className="slide-7__text">You listened to 3,000 minutes of music between midnight - 4am</p>
-                    </div>
-
+                    <p className="slide-7__heading">You were in different moods every trimester. Don’t believe us?</p>
                 );
             case 8:
                 return(
-                    <div className="slide-8__content-box">
-                        <h1 className="slide-8__heading">With taste like this, you're going to be an amazing mom!</h1>
-                    </div>
+                    <ul className="slide-8__list">
+                        <li className="slide-8__list-item">1) Indie</li>
+                        <li className="slide-8__list-item">2) R&B</li>
+                        <li className="slide-8__list-item">3) Pop</li>
+                    </ul>
+                );
+            case 9:
+                return(
+                    <p className="slide-9__heading">The baby kept you up a lot. Like, a lot a lot.</p>
+                );
+            case 10:
+                return(
+                    <p className="slide-10__heading">You listened to 5,600 minutes of music between 12 pm and 5 am.</p>
+                );
+            case 11:
+                return(
+                    <p className="slide-11__heading">Congratulations. You made it to Motherhood.</p>
+                );
+            case 12:
+                return(
+                    <p className="slide-12__heading">It only gets easier from here. Not really. But you’ll figure it out, you always do.</p>
                 );
         }
     }
