@@ -81,7 +81,7 @@
     }
 
     &_slide12{
-        background: var(--teal);
+        background: var(--blue);
     }
 }
 
@@ -255,7 +255,7 @@
 }
 
 .slide-7{
-    background: linear-gradient(var(--gray), var(--rose));
+    background: linear-gradient(var(--blue), var(--rose));
 
     &__heading{
         color: var(--blue);
@@ -263,18 +263,25 @@
 }
 
 .slide-8{
-    background: linear-gradient(var(--teal), var(--rose));
+    background: linear-gradient(var(--blue), var(--pink));
 
-    // &__heading{
-    //     color: var(--gray);
-    // }
+    &__content-box{
+        place-self: center center;
+        @include mixins.default-grid;
+        margin-top: -1rem;
+    }
+
+
+    &__heading{
+        @include mixins.slide-heading;
+        margin-bottom: 0.5rem;
+        color: var(--gray);
+    }
 
     &__list{
         @include mixins.slide-heading;
-        text-align:unset;
+        text-align: unset;
         margin: 0.5rem auto 0;
-        place-self: center center;
-        margin-top: -1rem;
     }
 
     &__list-item{
@@ -308,7 +315,7 @@
 }
 
 .slide-11{
-    background: linear-gradient(var(--gray), var(--rose));
+    background: linear-gradient(var(--rose), var(--pink));
 
     &__heading{
         color: var(--blue);

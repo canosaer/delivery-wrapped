@@ -100,19 +100,22 @@ export default function Wrapped() {
                 );
             case 8:
                 return(
-                    <ul className="slide-8__list">
-                        <li className="slide-8__list-item">1) Indie</li>
-                        <li className="slide-8__list-item">2) R&B</li>
-                        <li className="slide-8__list-item">3) Pop</li>
-                    </ul>
+                    <div className="slide-8__content-box">
+                        <h2 className="slide-8__heading">Top genres by trimester</h2>
+                        <ul className="slide-8__list">
+                            <li className="slide-8__list-item">1) Indie</li>
+                            <li className="slide-8__list-item">2) R&B</li>
+                            <li className="slide-8__list-item">3) Pop</li>
+                        </ul>
+                    </div>
                 );
             case 9:
                 return(
-                    <p className="slide-9__heading">The baby kept you up a lot. Like, a lot a lot.</p>
+                    <p className="slide-9__heading">The baby kept you up a lot. <span className="nowrap">Like, a lot a lot.</span></p>
                 );
             case 10:
                 return(
-                    <p className="slide-10__heading">You listened to 5,600 minutes of music between 12 pm and 5 am.</p>
+                    <p className="slide-10__heading">You listened to 5,600 minutes of music between 12 am and 5 am.</p>
                 );
             case 11:
                 return(
@@ -138,7 +141,7 @@ export default function Wrapped() {
                 className="wrapped__swiper"
                 loop={true}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
                 }}
             >
                 {slides.map((slide, i) => {

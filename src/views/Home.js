@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import TopRow from '../components/TopRow'
 import BottomRow from '../components/BottomRow'
-import mom from '../img/mom.jpg'
-import baby from '../img/baby.jpg'
+import mom from '../img/mom.png'
+import baby from '../img/baby.png'
 import celebration from '../img/celebration.png'
 
 export default function Home() {
