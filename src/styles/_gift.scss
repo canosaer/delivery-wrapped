@@ -13,107 +13,40 @@
     }
 
     &__content{
+        @include mixins.default-grid;
         color: var(--gray);
         background-color: var(--rose);
         place-self: center center;
         padding: 2rem;
         border-radius: 0.7rem;
+        height: 30rem;
     }
 
-    &__heading{
-        @include mixins.slide-heading;
-        text-transform: uppercase;
+    &__content-box{
+        @include mixins.default-grid;
+        place-self: center center;
     }
 
     &__text{
-        margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.85rem;
         text-align: center;
         line-height: 1.4;
-        margin-bottom: 2rem;
     }
 
-    .address-form{
+    &__link{
         @include mixins.default-grid;
-        grid-template-columns: 1fr 3.4rem 3.4rem;
+        background-color: var(--gray);
+        border-radius: 999rem;
+        height: 3rem;
+        width: 10rem;
+        place-self: center center;
+        margin-top: 2rem;
+    }
 
-        &__label{
-            grid-column: 1/2;
-            font-weight: 600;
-            
-
-            &_state{
-                grid-column: 2/3;
-                grid-row: 7/8;
-            }
-
-            &_zip{
-                grid-column: 3/4;
-                grid-row: 7/8;
-            }
-        }
-
-        [contenteditable="true"]:focus {
-            outline: none;
-        }
-
-        &__input{
-            grid-column: 1/-1;
-            background: none;
-            outline: none;
-            color: var(--gray);
-            border: none;
-            border-bottom: 1px solid var(--gray);
-            padding: 0.4rem 0 0 0.1rem;
-            border-radius: 0;
-
-            &_city{
-                grid-column: 1/2;
-                margin-right: 1rem;
-            }
-
-            &_state{
-                grid-column: 2/3;
-                margin-right: 1rem;
-            }
-
-            &_zip{
-                grid-column: 3/4;
-            }
-        }
-
-        &__error{
-            font-size: 0.75rem;
-            margin-left: 0.1rem;
-            height: 1rem;
-
-            &_city{
-                grid-row: 9/10
-            }
-            
-            &_state{
-                grid-row: 9/10
-            }
-
-            &_zip{
-                grid-row: 9/10
-            }
-        }
-
-        &__button{
-            grid-column: 1/-1;
-            margin-top: 2rem;
-            background-color: var(--gray);
-            padding: 0.65rem 1.65rem;
-            place-self: center center;
-            outline: none;
-            border: none;
-            border-radius: 999rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            cursor: pointer;
-            color: black;
-            font-size: 0.95rem;
-        }
+    &__link-text{
+        place-self: center center;
+        color: var(--rose);
+        font-weight: bold;
+        font-size: 1.2rem;
     }
 }
