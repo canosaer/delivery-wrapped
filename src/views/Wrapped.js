@@ -17,7 +17,7 @@ import "swiper/css/autoplay";
 export default function Wrapped() {
     const [songMax, setSongMax] = useState(0)
 
-    let slides = ['','','','','','','','','','','','']
+    let slides = ['','','','','','','','','','','',]
     slides.fill('swiper-slide slide-')
     const ref = useRef()
 
@@ -31,11 +31,11 @@ export default function Wrapped() {
         switch(slide) {
             case 1:
                 return (
-                    <p className="slide-1__heading">We know you’ve already had a special delivery (shout out baby), but we wanted to give you another one.</p>
+                    <p className="slide-1__heading">We know you’ve already had a special delivery (shout out baby), but we wanted to give you <span className="nowrap">another one.</span></p>
                 );
             case 2:
                 return (
-                    <p className="slide-2__heading">Here's your Delivery Wrapped.</p>
+                    <p className="slide-2__heading">We were there for it all. The morning sickness. The sleepless nights. Even the “WTF I’m carrying a human” moments. Here’s your Delivery Wrapped.</p>
                 );
             case 3:
                 return (
@@ -77,7 +77,7 @@ export default function Wrapped() {
                             {musicData.artists.map((artist, i) => {
                                 const key = `artist--${i}`
 
-                                if(i<songMax-1){
+                                if(i<songMax-2){
                                     return(
                                         <div className="row">
                                             <p className="row__rank">#{i+1}</p>
@@ -96,12 +96,8 @@ export default function Wrapped() {
                 );
             case 7:
                 return(
-                    <p className="slide-7__heading">You were in different moods every trimester. Don’t believe us?</p>
-                );
-            case 8:
-                return(
                     <div className="slide-8__content-box">
-                        <h2 className="slide-8__heading">Top genres by trimester</h2>
+                        <h2 className="slide-8__heading">You were in different moods every trimester. Don’t believe us?</h2>
                         <ul className="slide-8__list">
                             <li className="slide-8__list-item">1) Indie</li>
                             <li className="slide-8__list-item">2) R&B</li>
@@ -109,21 +105,21 @@ export default function Wrapped() {
                         </ul>
                     </div>
                 );
-            case 9:
+            case 8:
                 return(
                     <p className="slide-9__heading">The baby kept you up a lot. <span className="nowrap">Like, a lot a lot.</span></p>
                 );
-            case 10:
+            case 9:
                 return(
                     <p className="slide-10__heading">You listened to 5,600 minutes of music between 12 am and 5 am.</p>
                 );
+            case 10:
+                return(
+                    <div className="slide-11__heading"><p>Your time listening for two was well spent.</p><p>Just imagine your baby coming into the world without knowing your <span className="nowrap">go-tos?</span></p><p>Actually don't, that’s scary.</p></div>
+                );
             case 11:
                 return(
-                    <p className="slide-11__heading">Congratulations. You made it to Motherhood.</p>
-                );
-            case 12:
-                return(
-                    <p className="slide-12__heading">It only gets easier from here. Not really. But you’ll figure it out, you always do.</p>
+                    <div className="slide-12__heading"><p>This may be the end of your Delivery Wrapped, but you're just getting started on the motherhood front.</p><p>You got this.You always do.</p></div>
                 );
         }
     }

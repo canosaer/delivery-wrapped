@@ -60,27 +60,27 @@
         grid-template-rows: 5.25rem;
     }
 
-    &_slide7{
-        background: var(--pink);
-    }
+    // &_slide7{
+    //     background: var(--pink);
+    // }
 
-    &_slide8{
+    &_slide7{
         background: var(--teal);
     }
 
-    &_slide9{
+    &_slide8{
         background: var(--pink);
     }
 
-    &_slide10{
+    &_slide9{
         background: var(--blue);
     }
 
-    &_slide11{
+    &_slide10{
         background: var(--pink);
     }
 
-    &_slide12{
+    &_slide11{
         background: var(--blue);
     }
 }
@@ -319,6 +319,10 @@
 
     &__heading{
         color: var(--blue);
+
+        p{
+            margin-bottom: 0.75rem;
+        }
     }
 }
 
@@ -327,5 +331,9 @@
 
     &__heading{
         color: var(--pink);
+
+        p{
+            margin-bottom: 0.75rem;
+        }
     }
 }
